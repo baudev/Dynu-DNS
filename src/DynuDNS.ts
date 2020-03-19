@@ -20,9 +20,8 @@ export class DynuDNS {
      * @param domain
      * @param ipv4 10.0.0.0 will be replaced by the request sender IP.
      */
-    public updateIPOfDomain(domain: string, ipv4?: string): Promise<ResponseEnum> {
+    public updateIPOfDomain(domain: string, ipv4: string): Promise<ResponseEnum> {
         return new Promise(((resolve, reject) => {
-            ipv4 = ipv4 === undefined ? "no" : ipv4;
             fetch("https://api.dynu.com/nic/update?hostname=" + domain + "&username=" + this.username + "&password=" + this.password + "&myip=" + ipv4)
                 .then((res: Response) => res.text())
                 .then((text: string) => {
@@ -88,3 +87,12 @@ export class DynuDNS {
         this._username = value;
     }
 }
+
+let dns = new DynuDNS("username", "password");
+dns.updateIPOfDomain("domain.com", "10.0.0.0")
+    .then((res: ResponseEnum) => {
+        console.log("success!")
+    })
+    .catch((err: ResponseEnum) => {
+        console.log("error...")
+    });
