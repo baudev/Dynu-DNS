@@ -12,8 +12,7 @@ npm i dynu-dns
 
 Example updating the IPV4 of the domain `domain.com`.
 
-``` 
-typscript
+```typscript
 let dns = new DynuDNS("username", "password");
 dns.updateIPOfDomain("domain.com", "145.126.1.0")
     .then((res: ResponseEnum) => {
