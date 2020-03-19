@@ -1,0 +1,34 @@
+{
+  "name": "dynu-dns",
+  "version": "1.0.0",
+  "description": "Update IP of your DNS (dynu.com)",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf build/ && tsc",
+    "install": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baudev/Dynu-DNS.git"
+  },
+  "keywords": [
+    "Dynu",
+    "DNS",
+    "Typescript"
+  ],
+  "author": "baudev",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/baudev/Dynu-DNS/issues"
+  },
+  "homepage": "https://github.com/baudev/Dynu-DNS#readme",
+  "dependencies": {
+    "@types/node": "^13.9.2",
+    "is-md5": "0.0.2",
+    "md5": "^2.2.1",
+    "node-fetch": "^2.6.0",
+    "typescript": "^3.8.3"
+  }
+}
