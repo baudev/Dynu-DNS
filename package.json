@@ -2,8 +2,8 @@
   "name": "dynu-dns",
   "version": "1.0.0",
   "description": "Update IP of your DNS (dynu.com)",
-  "main": "build/index.js",
-  "types": "build/index.d.ts",
+  "main": "build/DynuDNS.js",
+  "types": "build/DynuDNS.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rm -rf build/ && tsc",
