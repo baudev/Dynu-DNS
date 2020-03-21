@@ -5,9 +5,7 @@
   "main": "build/DynuDNS.js",
   "types": "build/DynuDNS.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rf build/ && tsc",
-    "install": "npm run build"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
