@@ -87,12 +87,3 @@ export class DynuDNS {
         this._username = value;
     }
 }
-
-let dns = new DynuDNS("username", "password");
-dns.updateIPOfDomain("domain.com", "10.0.0.0")
-    .then((res: ResponseEnum) => {
-        console.log("success!")
-    })
-    .catch((err: ResponseEnum) => {
-        console.log("error...")
-    });
