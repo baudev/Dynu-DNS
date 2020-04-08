@@ -1,6 +1,6 @@
 {
   "name": "dynu-dns",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Update IP of your DNS (dynu.com)",
   "main": "build/DynuDNS.js",
   "types": "build/DynuDNS.d.ts",
